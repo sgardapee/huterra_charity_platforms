@@ -1,0 +1,29 @@
+screenshot  = screenshot.png
+name        = HfH Bootstrap
+description = Bootstrap subtheme
+core        = 7.x
+base theme  = bootstrap
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[headerMiddle]   = 'Top Bar Middle'
+regions[headerRight]    = 'Top Bar Right'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[sponsors]       = 'Sponsors'
+regions[footer]         = 'Footer'
+regions[footerMiddle]   = 'Footer Middle'
+regions[footerRight]    = 'Footer Right'
+regions[main_slider]    = 'Slider'
+regions[local_news]     = 'Local'
+regions[state_news]     = 'State'
+
+stylesheets[all][] = hfh.css
+
+settings[toggle_name] = 0
+settings[toggle_search] = 1
+settings[carousel_timing] = 8000
+settings[background_color] = 0

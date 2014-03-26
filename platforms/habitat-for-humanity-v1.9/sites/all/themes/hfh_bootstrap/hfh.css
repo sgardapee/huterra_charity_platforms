@@ -1,0 +1,96 @@
+/* Custom Styles for Elements by Jack  */
+/* Also bootstrap overrides */
+html { background-color:black; }
+body {padding: 0; font-family: 'Molengo', Arial, serif; }
+/* ***** slg ***** 
+   removed height property in #header, replaced with media query */
+#header { background-color:white; width:100%; margin: 0 auto; }
+/*#header { background-color:white; height:160px; width:100%; margin: 0 auto; } */
+#headerWrapper { background-color: white; }
+/*#header {height:100px; } */
+.logo {padding: 10px 0; } 
+.navbar {margin-bottom:0; border-bottom:1px #72b1ff solid; }
+.navbar-inner { filter:none; background-color: #005596; background-image: none; background-repeat: none; border:none; border-radius: 0px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; padding:0 10px; }
+/* ***** slg ***** 
+   replaced width with max width */
+.navbar .container { max-width: 1170px; }
+/*.navbar .container { width: 1170px; }*/
+/*#menu-bar {width: 1170 px !important;}*/
+#background {background: -moz-linear-gradient(top, #005596, #1D5EA0); background: -webkit-gradient(linear, left top, left bottom, from(#005596), to(#1D5EA0)); background: -moz-linear-gradient(top, #005596, #1D5EA0); filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#005596', endColorstr='#1d5ea0'); /* IE6 & IE7 */
+5 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3986d9', endColorstr='#1d5ea0')"; /* IE8 */}
+#background .container {padding-top: 20px !important; padding:0 20px; }
+#content { margin: 0 20px; }
+#logo { float: left; margin: 1.5em 2.06521739% 1.5em 0; background:url("../../../themes/bootstrap/images/logo.png") no-repeat; height:100px; min-width:320px;  }
+.feedContainer { padding: 25px; background-color: #F8F5D5; margin-bottom: 25px; height: 150px; border-radius: 4px; }
+.navbar .nav > li > a { color: white; text-shadow: none; }
+#wisconsin {text-align:center; padding-top:35px; }
+.call {  margin: 0 auto; padding: 15px 0; font: 18px Georgia, 'Times New Roman', serif; font-style: italic; text-align: center; word-wrap: break-word; }
+.footer {border:none !important; margin-top:0; padding: 10px 0 10px 0;}
+.footerWraper { background-color:white; }
+.region-footer { padding-left: 20px; }
+.tabbable { overflow: auto; height: 170px; }
+.well {background-color:#F8F5D5;}
+.sidebar-nav {background-color: white; }
+.nav-header{text-align:center; }
+.footer .span4 {text-align:center;}
+ul.nav li.dropdown:hover ul.dropdown-menu {display: block;margin:0 0 0 0; } /*comment this line out to eliminate hover e.g. enable navive bootstrap functionality */
+.dropdown-menu .dropdown-menu { display: none !important; } /* secondary dropdown menus */
+.dropdown-submenu:hover .dropdown-menu { display: block !important; } /* secondary dropdown menus */
+
+#block-menu-menu-welcome li { padding: 15px; margin: 2px; background-color: #005596;}
+#block-menu-menu-welcome li:hover { background-color: #51bb48;}
+#block-menu-menu-welcome li a { font-size:1.5 em; color:white; }
+.nav > li > a:hover { color:white; background-color:#51bb48;  }
+.region-local-news { height: 185px; overflow: auto;min-height: 20px; padding: 19px; margin-top: 20px; background-color: #F8F5D5; border: 1px solid #e3e3e3; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05); -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05); box-shadow: inset 0 1px 1px rgba(0,0,0,0.05); }
+
+.accordion-header, .accordion-header:hover {background:none; border:none; }
+.ui-accordion-content { padding: 0 0 0 15px; border: none; background:none; }
+.ui-accordion-content li  { padding: 5px 0 }
+
+.webform-container-inline label { float:left; width: 175px; }
+
+/*
+ Changes by Tim
+ make header thinner vertically
+*/
+.page-header { margin: 5px 0 5px; }
+.region-local-news { margin-top: 0px; min-height: 205px; }
+.span9.content-column { margin-left: 5px; }
+.news-feed-row .views-field.views-field-title { font-size: large; }
+/* ****** slg add margin to bottom of event news block */
+div#background div.container div.row div.span9 div#content div.row-fluid section.span12 div.row-fluid div.span12 div.region {
+	margin-bottom: 20px;
+}
+/* ****** slg adjust header height based on screen size so header links don't disappear */
+@media screen and (min-width:801px) {
+	#header { height: 100px }
+}
+@media screen and (max-width:800px) {
+	#header { min-height: 100px }
+}
+/* ****** slg adjust menu colors when screen size is smaller  */
+@media screen and (max-width:999px) {
+	.nav-collapse .nav > li > a {color: #FFFFFF; margin-left: 20px; }
+	.nav-collapse .nav > li > a {background-image: linear-gradient(to bottom, #000000, #ffffff }
+	.nav-collapse .nav > li > a:hover, 
+	.nav-collapse .nav > li > a:focus { background-color: #FFFFFF; }
+	.nav-collapse .dropdown-menu a {color: #FFFFFF; margin-left: 40px; } 
+	.nav-collapse .dropdown-menu a:hover, 
+	.nav-collapse .dropdown-menu a:focus,
+	.nav-collapse .dropdown-menu a.active-trail:hover { background-color: #FFFFFF; }
+}
+/* ****** slg set header width */
+#headerWrapper .container {  
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/* ****** slg clear links for smaller media */
+.contextual-links-region {
+	clear: both;
+}
+/* ****** slg align right nav */   
+.navbar .nav.pull-right {
+    float: right;
+    margin-right: 20px;
+    padding-right: 20px;
+}
